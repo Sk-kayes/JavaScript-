@@ -1,0 +1,14 @@
+// Find the largest number in an array with only positive numbers.
+
+let arr =[34, 76, 89, 23, 45, 90, 43, 22, 80]
+let max = arr[0];
+let min = arr[0];
+for(let i=0; i<arr.length; i++) {
+    if(arr[i]>max) {
+        max = arr[i];
+    }else if(arr[i]<min) {
+        min = arr[i];
+    }
+}
+console.log(`Max number is: ${max}`);
+console.log(`Min number is: ${min}`);
