@@ -1,0 +1,16 @@
+// Write a JavaScript function to extract unique characters from a string. Example: str=“abcdabcdefgggh” ans= “abcdefgh”
+
+let str = "abcdabcdefgggh";
+let ans = "";
+
+function uniChar(str) {
+    for(let i=0; i<str.length; i++) {
+        let currChar = str[i];
+        if(ans.indexOf(currChar) == -1){
+            ans += currChar;
+        }
+    }
+    return ans;
+}
+
+console.log(uniChar(str));
