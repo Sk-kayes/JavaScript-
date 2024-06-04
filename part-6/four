@@ -1,0 +1,14 @@
+// Write a JavaScript function to count the number of vowels in a String argument.
+
+let str = "My name is sk kayes";
+
+function vowelCount(str) {
+    let count = 0;
+    for(char of str) {
+        if(char == "a" || char == "e" || char == "i" || char == "o" || char == "u") {
+            count++;
+        }
+    }
+    return count;
+}
+console.log(vowelCount(str));
