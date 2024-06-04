@@ -1,0 +1,7 @@
+// Write a JavaScript function to generate a random number within a range(start,end).
+
+function randomNumberRange(start, end) {
+    let randomNumber = Math.floor(Math.random()*end)+start;
+    return randomNumber;
+}
+console.log(randomNumberRange(1, 6));
